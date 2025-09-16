@@ -1,4 +1,4 @@
-# Gemini_chatbot_with_history
+# OpenAI_OSS_20b_chatbot_with_history
 
 ChatBot Link: https://openaioss20bchatbotwithhistory-fuzmjtkwwzwwwpa9pjywku.streamlit.app/
 
