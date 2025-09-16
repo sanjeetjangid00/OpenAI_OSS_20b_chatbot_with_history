@@ -14,7 +14,7 @@ LANGCHAIN_API_KEY = st.secrets["LANGCHAIN_API_KEY"]
 LANGCHAIN_PROJECT = st.secrets["LANGCHAIN_PROJECT"]
 LANGCHAIN_ENDPOINT = st.secrets["LANGCHAIN_ENDPOINT"]
 LANGCHAIN_TRACING_V2 = st.secrets["LANGCHAIN_TRACING_V2"]
-GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
 # Initialize model
 model = ChatGroq(model="openai/gpt-oss-20b")
