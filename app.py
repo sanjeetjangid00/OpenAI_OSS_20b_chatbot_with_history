@@ -108,18 +108,27 @@ if chat:
     for word in response_text.split():
         output += word + " "
         placeholder.markdown(
-            f"""
-            <div style="text-align:left; background-color:#E0F7FA;
-            border-radius:15px; padding:10px; max-width:110%;
-            margin:10px 0; display:inline-block;">
+        f"""
+        <div style="
+            background-color:#E0F7FA;
+            border-radius:15px;
+            padding:12px 16px;
+            max-width:70%;
+            margin:10px 0;
+            display:block;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        ">
             <img src="https://img.icons8.com/ios/452/artificial-intelligence.png"
-            style="vertical-align:middle; width:25px; height:25px; margin-right:10px;" />
-            {output}
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-        time.sleep(0.02)
+            style="vertical-align:middle; width:22px; height:22px; margin-right:8px;" />
+            <span style="vertical-align:middle;">{output}</span>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    time.sleep(0.02)
     st.session_state["chat_history"].append({"role": "assistant", "content": response_text})
 
 elif not st.session_state["chat_history"]:
